@@ -12793,7 +12793,9 @@ span.form-control {
 
 .contacts__item {
     position: relative;
-    padding-left: 30px;
+    padding-left: 35px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 /*.contacts__item:hover {*/
 /*    color:red;*/
@@ -12803,29 +12805,34 @@ span.form-control {
 .contacts__icon {
     position: absolute;
     left: 0;
-    width: 30px;
-    height: 30px;
-    top: 0;
+    width: 25px;
+    height: 32px;
+    top:-5px;
 }
-.contacts__icon:hover{
-    color:red
+.contacts__item:hover{
+    opacity: 0.6
 }
 .contacts__icon-phone {
-    top: -5px;
+    top: 0px;
+    height: 20px;
 }
 .contacts__icon-email{
-    width: 25px;
+    /*width: 25px;*/
 }
 
 .contacts__icon-card {
     /*top: 2px;*/
-    width: 36px;
+    /*width: 36px;*/
 }
 
 .socialNetworks__list {
     display: flex;
     justify-content: space-between;
 }
+.socialNetworks__item:hover {
+    opacity: 0.5;
+}
+
 
 .nav-menu {
     display: flex;
