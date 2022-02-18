@@ -7351,7 +7351,7 @@ button.close {
 .btn-group-vertical > .btn-group:before,
 .btn-group-vertical > .btn-group:after,
     /*.nav:before,*/
-/*.nav:after,*/
+    /*.nav:after,*/
 .navbar:before,
 .navbar:after,
 .navbar-header:before,
@@ -8125,7 +8125,7 @@ label {
 }
 
 .logo {
-    float: left;
+    /*float: left;*/
     display: inline-block;
     background: url('img/logo.svg') 50% 42% no-repeat;
     background-size: 92px 30px;
@@ -8237,6 +8237,7 @@ label {
 
 .right-menu {
     float: right;
+    padding-right: 15px;
 }
 
 .right-menu > li {
@@ -8395,6 +8396,7 @@ label {
 .container-fluid {
     padding-right: 0px;
     padding-left: 0px;
+
 }
 
 .maxWidth {
@@ -8411,7 +8413,7 @@ label {
 
 .tile {
     position: relative;
-   cursor:pointer;
+    cursor: pointer;
     background: black;
 }
 
@@ -8670,7 +8672,7 @@ label {
     position: absolute;
     right: 0;
     top: 0;
-    color:black ;
+    color: black;
     background: black url('img/arrows.svg') no-repeat center center;
 }
 
@@ -10761,7 +10763,7 @@ body.white-bg {
 @media (min-width: 1024px) and (max-width: 1439px) {
 
     .tilecaption .title {
-        font-size:40px;
+        font-size: 40px;
     }
 
     .tilecaption .title span {
@@ -12789,69 +12791,119 @@ span.form-control {
     padding-left: 15px;
 }
 
+.contacts__item {
+    position: relative;
+    padding-left: 30px;
+}
+/*.contacts__item:hover {*/
+/*    color:red;*/
+/*    background-color: #0e90d2;*/
+/*}*/
+
+.contacts__icon {
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    top: 0;
+}
+.contacts__icon:hover{
+    color:red
+}
+.contacts__icon-phone {
+    top: -5px;
+}
+.contacts__icon-email{
+    width: 25px;
+}
+
+.contacts__icon-card {
+    /*top: 2px;*/
+    width: 36px;
+}
+
+.socialNetworks__list {
+    display: flex;
+    justify-content: space-between;
+}
+
 .nav-menu {
     display: flex;
     justify-content: space-between;
     padding-top: 30px;
     padding-bottom: 30px;
 }
-.shopWoman-row{
+
+.shopWoman-row {
     margin-top: 40px;
 }
+
 .shop-row {
     display: flex;
     flex-wrap: wrap;
     padding-left: 15px;
     justify-content: space-around;
 }
-.shop-col{
+
+.shop-col {
     padding-left: 0;
     padding-right: 0;
 }
 
-.shop_left{
+.shop_left {
     float: left;
     width: 536px;
 }
-.grid__body{
+
+.grid__body {
     display: grid;
 
     grid-template-columns: 0.4fr repeat(3, 0.2fr);
     grid-template-rows: 50% 50%;
 
 }
-.grid__body2{
+
+.wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.grid__body2 {
     display: grid;
 
-    grid-template-columns: repeat(3, 0.2fr) 0.4fr ;
+    grid-template-columns: repeat(3, 0.2fr) 0.4fr;
     grid-template-rows: 50% 50%;
 
 }
-.grid__item{
+
+.grid__item {
     text-align: center;
     border: 2px dashed rgba(255, 255, 255, .2);
     /*padding: 10px;*/
 }
-.grid__item .grid__img{
+
+.grid__item .grid__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.cookiesBar{
+
+.cookiesBar {
     display: none;
 }
-.product-list{
+
+.product-list {
     overflow: auto;
     display: flex;
     flex-wrap: wrap;
     /* flex-direction: column; */
 }
-.product-list .col-md-4{
+
+.product-list .col-md-4 {
     /*background: rgb(100,100,100) radial-gradient(circle at 50% 0, rgba(255,255,255,.65), rgba(255,255,255,.35));*/
-    box-shadow:
-            inset rgba(0,0,0,.6) 0 -3px 8px,
-            inset rgba(252,255,255,.7) 0 3px 8px,
-            rgba(0,0,0,.8) 0 3px 8px -3px;
+    box-shadow: inset rgba(0, 0, 0, .6) 0 -3px 8px,
+    inset rgba(252, 255, 255, .7) 0 3px 8px,
+    rgba(0, 0, 0, .8) 0 3px 8px -3px;
     border: 2px solid #fff;
     /*padding-left: 0;*/
     /*padding-right: 0;*/
@@ -12859,11 +12911,12 @@ span.form-control {
     flex-direction: column;
     justify-content: space-between;
 }
-.product-list .col-md-4>h4{
+
+.product-list .col-md-4 > h4 {
     flex: 1 1 100%;
 }
 
-.add-to-cart{
+.add-to-cart {
     margin-top: 20px;
     margin-bottom: 20px;
     color: black;
@@ -12872,12 +12925,21 @@ span.form-control {
     border: 1px solid black;
     transition: .6s;
     width: max-content;
+    text-transform: uppercase;
 }
-.add-to-cart:hover{
+
+.add-to-cart:hover {
     color: white;
     background: black;
 }
-.cost{
+
+.cost {
     font-size: 20px;
     font-weight: 500;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
