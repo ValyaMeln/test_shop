@@ -1430,6 +1430,7 @@ mark,
 
 .text-center {
     text-align: center;
+    color: black;
 }
 
 .text-justify {
@@ -4473,12 +4474,16 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     position: relative;
     display: block;
     padding: 10px 15px;
+    border: 1px solid white;
 }
 
 .nav > li > a:hover,
 .nav > li > a:focus {
     text-decoration: none;
-    background-color: #777;
+    /*background-color: #777;*/
+    background-color: #FFFFFF;
+    color: black;
+    border: 1px solid black;
 }
 
 .nav > li.disabled > a {
@@ -4926,7 +4931,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     }
 
     .navbar-nav > li {
-        float: left;
+        /*float: left;*/
+
+        flex: 0 1 100%;
+        /* display: flex; */
+        text-align: center;
+
     }
 
     .navbar-nav > li > a {
@@ -4934,6 +4944,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
         padding-bottom: 15px;
         background-color: black;
         color: white;
+        white-space: nowrap;
     }
 }
 
@@ -7955,6 +7966,7 @@ h1, h2, h3, h4, h5 {
 
 h2 {
     font-size: 37px;
+    color: black;
 }
 
 h3 {
@@ -8036,8 +8048,8 @@ p {
 }
 
 .btn-dark {
-    background: #eee;
-    color: #111 !important;
+    background: #111;
+    color: #FFFFFF !important;
 }
 
 .btn-dark:hover {
@@ -8547,12 +8559,13 @@ label {
 ************************/
 
 .footer {
-    color: #fff;
-    background: #34383b;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 40px;
-    padding-right: 40px;
+    color: #111;
+    background: #FFFFFF;
+    /*padding-top: 40px;*/
+    /*padding-bottom: 40px;*/
+    /*padding-left: 40px;*/
+    /*padding-right: 40px;*/
+    padding: 40px;
 }
 
 .footer-left {
@@ -8576,7 +8589,7 @@ label {
 }
 
 .footer-menu ul li a {
-    color: #fff;
+    color: #111;
     font-size: 13px;
     letter-spacing: 1.5px;
     text-transform: uppercase;
@@ -12416,7 +12429,7 @@ footer span {
     display: block;
     margin: 15px 0px 5px;
     font-size: 13px;
-    color: #fff;
+    color: #111;
     font-family: pfbeausanspro-light;
 }
 
